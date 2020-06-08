@@ -35,7 +35,7 @@ const GuageChart = ({ metadata, id }) => {
           marker: { size: 28, color: '850000' },
           showlegend: false,
           name: 'Wash Frequnecy',
-          text: wFreqLevel,
+          text: wFreq,
           hoverinfo: 'text+name'
         },
         {
