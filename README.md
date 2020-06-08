@@ -8,6 +8,6 @@ In the project directory, you can run:
 
 ### `npm install`
 ### `npm start`
-### `npm build`
+### `npm run build`
 
 ![alt text](assets/screen_shot.png)
