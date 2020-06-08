@@ -1,7 +1,7 @@
 import React from 'react';
 import Plot from 'react-plotly.js';
 
-export default function ({ metadata, id }) {
+const GuageChart = ({ metadata, id }) => {
 
   const demographicInfo = metadata.filter(d => d.id === parseInt(id, 10))[0];
   const wFreq = demographicInfo.wfreq;
@@ -84,6 +84,8 @@ export default function ({ metadata, id }) {
   </div>
   )
 }
+
+export default GuageChart;
 
 
 

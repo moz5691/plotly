@@ -19,7 +19,7 @@ const useStyles = makeStyles({
 });
 
 
-export default function ({ metadata, id }) {
+const DemographicInfo = ({ metadata, id }) => {
 
   const classes = useStyles();
   const demographicInfo = metadata.filter(d => d.id === parseInt(id, 10))[0];
@@ -53,3 +53,5 @@ export default function ({ metadata, id }) {
     </div>
   );
 }
+
+export default DemographicInfo;

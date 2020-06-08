@@ -49,7 +49,7 @@ function App() {
   };
 
   useEffect(() => {
-    d3.json('data/samples.json')
+    d3.json('samples.json')
       .then(dataset => setDataset(dataset))
   }, [])
 

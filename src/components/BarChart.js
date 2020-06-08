@@ -1,7 +1,7 @@
 import React from 'react';
 import Plot from 'react-plotly.js';
 
-export default function ({ samples, id }) {
+const BarChart = ({ samples, id }) => {
 
   const sample = samples.filter(s => s.id === id)[0];
   const otuIds = sample.otu_ids.slice(0, 10).reverse().map(s => 'OTU ' + s);
@@ -55,3 +55,5 @@ export default function ({ samples, id }) {
     />
   )
 }
+
+export default BarChart;

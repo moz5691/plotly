@@ -2,10 +2,10 @@ import React from 'react';
 import Plot from 'react-plotly.js';
 import * as d3 from 'd3';
 
-export default function ({
+const BubbleChart = ({
   samples,
   id
-}) {
+}) => {
 
   const sample = samples.filter(s => s.id === id)[0];
 
@@ -68,3 +68,5 @@ export default function ({
   </div>
   )
 }
+
+export default BubbleChart;
