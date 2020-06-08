@@ -12,7 +12,7 @@ import Grid from '@material-ui/core/Grid';
 import Header from './components/Header';
 import DemographicInfo from './components/DemographicInfo';
 import Barchart from './components/BarChart';
-import GuageChart2 from './components/GuageChart';
+import GuageChart from './components/GuageChart';
 import BubbleChart from './components/BubbleChart';
 
 
@@ -87,7 +87,7 @@ function App() {
             </Grid>
             <Grid item xs={4}>
               <Paper className={classes.paper}>
-                <GuageChart2 metadata={dataset.metadata} id={name} />
+                <GuageChart metadata={dataset.metadata} id={name} />
               </Paper>
             </Grid>
             <Grid item xs={12}>
