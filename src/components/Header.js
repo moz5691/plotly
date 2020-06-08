@@ -5,10 +5,9 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    backgroundColor: 'yellow'
   },
   title: {
-    margin: '2rem',
+    margin: '0.8rem',
     textAlign: 'center',
   },
 }));
@@ -19,10 +18,10 @@ const Header = () => {
   return (
     <div className={classes.root}>
       <AppBar position="static">
-        <Typography variant="h2" className={classes.title}>
+        <Typography variant="h3" className={classes.title}>
           Belly Button Biodiversity Dashboard
         </Typography>
-        <Typography variant="h4" className={classes.title}>
+        <Typography variant="h5" className={classes.title}>
           Use the interactive charts below to explore the dataset
         </Typography>
 
