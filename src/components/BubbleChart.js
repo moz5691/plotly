@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import Plot from 'react-plotly.js';
 import * as d3 from 'd3';
 
@@ -6,6 +6,8 @@ const BubbleChart = ({
   samples,
   id
 }) => {
+
+  const bubblechartRef = useRef();
 
   const sample = samples.filter(s => s.id === id)[0];
 
@@ -15,20 +17,22 @@ const BubbleChart = ({
   const maxSampleValue = d3.max(sampleValues);
 
   return (<div className='App' >
-    < Plot data={
-      [{
-        x: otuIds,
-        y: sampleValues,
-        mode: 'markers',
-        marker: {
-          size: sampleValues.map(s => s / maxSampleValue * 150),
-          color: sampleValues.map(s => s),
-          opacity: 0.5,
-          colorscale: 'Rainbow',
-        }
+    < Plot
+      ref={bubblechartRef}
+      data={
+        [{
+          x: otuIds,
+          y: sampleValues,
+          mode: 'markers',
+          marker: {
+            size: sampleValues.map(s => s / maxSampleValue * 150),
+            color: sampleValues.map(s => s),
+            opacity: 0.5,
+            colorscale: 'Rainbow',
+          }
 
-      },]
-    }
+        },]
+      }
       layout={
         {
           width: 1200,

@@ -5,7 +5,6 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    ...theme,
     backgroundColor: 'yellow'
   },
   title: {
@@ -20,7 +19,6 @@ const Header = () => {
   return (
     <div className={classes.root}>
       <AppBar position="static">
-
         <Typography variant="h2" className={classes.title}>
           Belly Button Biodiversity Dashboard
         </Typography>

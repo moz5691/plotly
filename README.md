@@ -6,8 +6,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### `npm install`
-### `npm start`
-### `npm run build`
+### `yarn install`
+### `yarn start`
+### `yarn build`
 
 ![alt text](assets/screen_shot.png)

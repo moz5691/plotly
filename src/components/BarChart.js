@@ -1,21 +1,24 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import Plot from 'react-plotly.js';
 
 const BarChart = ({ samples, id }) => {
 
+  const barChartNode = useRef();
   const sample = samples.filter(s => s.id === id)[0];
   const otuIds = sample.otu_ids.slice(0, 10).reverse().map(s => 'OTU ' + s);
   const sampleValues = sample.sample_values.slice(0, 10).reverse();
 
   return (
-    < Plot data={
-      [{
-        type: 'bar',
-        x: sampleValues,
-        y: otuIds,
-        orientation: 'h'
-      },]
-    }
+    < Plot
+      ref={barChartNode}
+      data={
+        [{
+          type: 'bar',
+          x: sampleValues,
+          y: otuIds,
+          orientation: 'h'
+        },]
+      }
       layout={
         {
           width: 450,

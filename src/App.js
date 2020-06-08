@@ -19,7 +19,7 @@ import BubbleChart from './components/BubbleChart';
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    margin: '20px'
+    margin: 20
   },
   formControl: {
     margin: theme.spacing(1),
@@ -80,12 +80,12 @@ function App() {
                 <DemographicInfo metadata={dataset.metadata} id={name} />
               </Paper>
             </Grid>
-            <Grid item xs={5}>
+            <Grid item xs={4}>
               <Paper className={classes.paper}>
                 <Barchart samples={dataset.samples} id={name} />
               </Paper>
             </Grid>
-            <Grid item xs={4}>
+            <Grid item xs={5}>
               <Paper className={classes.paper}>
                 <GuageChart metadata={dataset.metadata} id={name} />
               </Paper>
