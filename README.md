@@ -10,4 +10,6 @@ In the project directory, you can run:
 ### `yarn start`
 ### `yarn build`
 
+#### Note: added 'GENERATE_SOURCEMAP=false' in '.env' file. S Source code size is large due to importing Plotly.  
+
 ![alt text](assets/screen_shot.png)
