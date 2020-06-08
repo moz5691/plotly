@@ -29,10 +29,10 @@ const useStyles = makeStyles((theme) => ({
     marginTop: theme.spacing(2),
   },
   paper: {
-    padding: theme.spacing(2),
+    padding: theme.spacing(1),
     textAlign: 'center',
     color: theme.palette.text.secondary,
-    height: 500,
+    height: 480,
   },
 }));
 
