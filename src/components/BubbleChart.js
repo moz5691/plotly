@@ -35,7 +35,7 @@ const BubbleChart = ({
       }
       layout={
         {
-          width: 1200,
+          width: 1000,
           height: 450,
           title: {
             text: 'Sample values', font: {

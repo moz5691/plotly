@@ -78,12 +78,12 @@ function App() {
                 <DemographicInfo metadata={dataset.metadata} id={name} />
               </Paper>
             </Grid>
-            <Grid item xs={4}>
+            <Grid item xs>
               <Paper className={classes.paper} variant="outlined" square={true}>
                 <Barchart samples={dataset.samples} id={name} />
               </Paper>
             </Grid>
-            <Grid item xs={5}>
+            <Grid item xs>
               <Paper className={classes.paper} variant="outlined" square={true}>
                 <GuageChart metadata={dataset.metadata} id={name} />
 
