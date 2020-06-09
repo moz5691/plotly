@@ -21,7 +21,7 @@ const BarChart = ({ samples, id }) => {
       }
       layout={
         {
-          width: 450,
+          width: 400,
           height: 480,
           title: {
             text: 'Top 10 sample values',

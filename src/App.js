@@ -1,4 +1,3 @@
-import './App.css';
 import * as d3 from 'd3';
 import React, { useState, useEffect } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
@@ -31,7 +30,6 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     padding: theme.spacing(1),
     textAlign: 'center',
-    color: theme.palette.text.secondary,
     height: 480,
   },
 }));
@@ -61,7 +59,7 @@ function App() {
         <div className={classes.root}>
           <Grid container spacing={3}>
             <Grid item xs={3}>
-              <Paper className={classes.paper}>
+              <Paper className={classes.paper} variant="outlined" square={true}>
                 <FormControl variant="outlined" className={classes.formControl}>
                   <InputLabel id="demo-simple-select-outlined-label">Name</InputLabel>
                   <Select
@@ -69,7 +67,7 @@ function App() {
                     id="demo-simple-select-outlined"
                     value={name}
                     onChange={handleChange}
-                    label="Name"
+                    label="ID"
                   >
                     <MenuItem value="">
                       <em>None</em>
@@ -81,17 +79,18 @@ function App() {
               </Paper>
             </Grid>
             <Grid item xs={4}>
-              <Paper className={classes.paper}>
+              <Paper className={classes.paper} variant="outlined" square={true}>
                 <Barchart samples={dataset.samples} id={name} />
               </Paper>
             </Grid>
             <Grid item xs={5}>
-              <Paper className={classes.paper}>
+              <Paper className={classes.paper} variant="outlined" square={true}>
                 <GuageChart metadata={dataset.metadata} id={name} />
+
               </Paper>
             </Grid>
             <Grid item xs={12}>
-              <Paper className={classes.paper}>
+              <Paper className={classes.paper} variant="outlined" square={true}>
                 <BubbleChart samples={dataset.samples} id={name} />
               </Paper>
             </Grid>

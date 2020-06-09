@@ -69,8 +69,8 @@ const GuageChart = ({ metadata, id }) => {
           }
         }],
         title: '<b>Gauge</b> <br> Wash Frequnecy',
-        height: 480,
-        width: 480,
+        height: 450,
+        width: 450,
         xaxis: {
           zeroline: false, showticklabels: false,
           showgrid: false, range: [-1, 1]
@@ -78,6 +78,13 @@ const GuageChart = ({ metadata, id }) => {
         yaxis: {
           zeroline: false, showticklabels: false,
           showgrid: false, range: [-1, 1]
+        },
+        margin: {
+          l: 10,
+          r: 10,
+          t: 60,
+          b: 10
+
         }
 
       }}
